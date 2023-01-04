@@ -1,0 +1,687 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+<title style="font-family:Ravie">Green Wish - Anthurium</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+<style>
+body{
+background-image:url(".jpg");
+margin:0px;
+height:auto;
+width:auto;
+}
+.d1{
+margin-top:5px;
+margin-left:650px;
+}
+.d2{
+margin-left:1385px;
+margin-top:-35px;}
+ul.a{
+list-style-type:none;
+background-color:white;
+padding:0px;
+width:100%;
+font-size:20px;
+background-color:none;
+font-family:Bell MT;
+position:fixed;
+margin-left:300px;
+
+margin-top:-80px;
+}
+li 
+{
+display:inline;
+float:left;
+}
+li a
+{color:#01624A ;
+display:block;
+padding:10px;
+text-decoration:none;
+}
+li a.active{
+background-color:#01624A ;
+color:white;
+}
+li a:hover:not(.active){
+background-color:#05D35E ;
+display:block;
+color:white;
+}
+.button1{
+background-color:white;
+color:#01624A  ;
+padding:10px;
+font-size:20px;
+border:none;
+cursor:pointer;
+text-decoration:none;
+font-family:Bell MT;
+}
+.dropdown{
+position:relative;
+display:inline-block;
+font-family:Bell MT
+padding:10px;
+text-decoration:none;
+}
+.dropdown-cont{
+display:none;
+position:absolute;
+background-color:green;
+width:200px;
+box-shadow:0px 8px 16px 0px #D5F7EF ;
+padding:10px;
+z-index:1;
+}
+.dropdown-cont a{
+color:#01624A;
+padding:10px;
+text-decoration:none;
+display:block;
+width:180px;
+}
+.dropdown:hover .button1{
+background-color: #05D35E ;
+display:block;
+color:white;
+text-decoration:none;
+}
+.dropdown:hover .dropdown-cont{
+display:block;
+background-color:white;
+color: #01624A ;
+}
+.dropdown-cont a:hover {
+background-color:#01624A ;
+color:white;
+display:block;
+}
+h2{
+margin-top:-60px;
+margin-left:100px;
+font-family:Ravie;
+text-decoration:none;
+}
+input[type=text] {
+  width: 150px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('search.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 90%;
+}
+form{
+float:right;
+margin-right:500px;
+}
+.log{
+float:right;
+margin-top:5px;
+margin-right:-300px;}
+marquee{
+color:white;
+background-color:#01624A;
+padding:5px;
+width:100%;
+margin-top:10px;
+}
+.header {
+  padding:0px; 
+  background:white;
+  color:black;
+  width:100%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
+}
+.bt3{
+text-decoration:none;
+margin-left:50px;
+ font-size:15px;}
+.button6{
+background-color:#01624A;
+color:white;
+text-decoration:none;
+width:150px;
+height:60px;
+display:inline-block;
+font-size:20px;
+text-align:center;
+border:none;
+float:right;
+margin-right:150px;
+cursor:pointer;
+border:solid white;
+font-family:Bell MT;
+margin-top:-20px;
+}
+.button6:hover {
+  background-color: #05D35E ;
+  color: white;}
+  .button5{
+background-color:#01624A;
+color:white;
+text-decoration:none;
+width:150px;
+height:60px;
+display:inline-block;
+font-size:20px;
+text-align:center;
+border:none;
+float:right;
+margin-right:20px;
+margin-top:-20px;
+cursor:pointer;
+border:solid white;
+font-family:Bell MT;
+}
+.button5:hover {
+  background-color: #05D35E ;
+  color: white;}
+ h4{
+  text-align:center;
+  font-size:20px;}
+p{
+font-size:18px;}
+.wrapper {
+	width: 1500px;
+	min-height: auto;
+	margin: 20px auto;
+	margin-top:50px;
+}
+.wrapper ul {
+	list-style: none;
+	padding: 0;
+}
+.wrapper ul:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.wrapper ul li {
+	width: calc(31%);
+	margin: 30px 15px 0;
+	height: 400px;
+	background-size: cover;
+	background-position: center center;
+	float: left;
+	box-shadow: 0 15px 10px 1px rgba(0, 0, 0, 0.5);
+}
+.wrapper ul li:nth-child(1n + 4) {
+	max-height: 0;
+	opacity: 0;
+	transition: 0.2s ease-in;
+}
+.wrapper .btn-area {
+	display: block;
+	background: #7f2a4b;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 900;
+	width: 180px;
+	line-height: 50px;
+	margin: 50px auto 0;
+	border-radius: 50px;
+}
+.wrapper .btn-area .btn2 {
+	display: none;
+}
+.wrapper #btnBox {
+	display: none;
+}
+.wrapper #btnBox:checked~ul li:nth-child(1n + 4) {
+	max-height: 1000px;
+	opacity: 1;
+	transition: 0.2s ease-in;
+}
+.wrapper #btnBox:checked~.btn-area .btn2 {
+	display: block;
+}
+.wrapper #btnBox:checked~.btn-area .btn1 {
+	display: none;
+}
+.overlay {
+  position: relative; 
+  bottom: 0; 
+  top:84%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */       
+  width: 91.5%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+li:hover .overlay {
+  opacity: 1;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: auto;
+}
+
+#section2 {
+  height: auto;
+  
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  margin-top:50px;
+  margin-left:50px; 
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: green;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  padding: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  float:left;
+  margin-left:350px;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.dot1 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  padding: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-left:10px;
+  float:left;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  padding: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-left:10px;
+  float:left;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+img.img{
+  position: -webkit-sticky;
+  position:sticky;
+  top: 0;
+  float:right;
+  z-index:9;
+}
+h3{
+font-size:50px;
+color:green;
+margin-left:200px;
+margin-top:-30px;}
+.fiel{
+width:600px;
+height:auto;
+float:right;
+margin-top:-500px;
+margin-right:50px;
+border:1px solid black;
+padding:10px}
+h1{
+font-size:50px;}
+.video{
+margin-left:50px;}
+h5{
+font-size:30px;}
+footer{
+  display: grid;
+  height: auto;
+  width: auto;
+  padding:30px 50px;
+  place-items: center;
+  background: linear-gradient(315deg, #0fa882 0%, #01624A 74%);
+}
+.wra .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+  decoration:none;
+}
+.wra .button:hover{
+  width: 200px;
+}
+.wra .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wra .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wra .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wra .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wra .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wra .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wra .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wra .button:hover .icon i{
+  color: #fff;
+}
+.wra .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wra .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wra .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wra .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wra .button:nth-child(4) span{
+  color: #333;
+}
+.wra .button:nth-child(5) span{
+  color: #ff0000;
+  text-decoration:none;
+}
+</style></head>
+<div class="main" id="section1"><div class="header" id="myHeader">
+<img src="logo.png"><h2>Green Wish</h2>
+<body>
+<marquee><b>USE CODE WISH10 TO GET 10% OFF | SHOP NOW</b></marquee>
+<ul class="a">
+<li><a href="Home.html">Home</a></li>
+<li><a href="landing.html">About Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<div class="dropdown">
+<button class="button1">Plants</button>
+<div class="dropdown-cont">
+<a href="Airpuri.html">Air Purifying plants</a>
+<a href="Indoor.html">Indoor plants</a>
+</div></div>
+<div class="dropdown">
+<button class="button1">Gifting</button>
+<div class="dropdown-cont">
+<a href="zodihome.html">Gifting-Lucky Plants as per zodiac Signs</a>
+</div></div>
+<div class="dropdown">
+<a href="FAQ.html"><button class="button1">FAQs</button></a>
+</div>
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+<div class="log"><a href="prjktlogin.html"><img src="login.png"></a><a href="pay.html"><img src="kart.png"></a></div>
+</ul>
+</div><script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}</script>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="anth1.jpg" style="width:100%">
+ 
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="anth2.jpg" style="width:100%">
+
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="anth3.jpg" style="width:100%" he>
+
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="anth4.jpg" style="width:100%">
+ 
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+
+<div style="text-align:right">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot1" onclick="currentSlide(2)"></span> 
+  <span class="dot2" onclick="currentSlide(3)"></span> 
+</div></div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script><br>
+<div class=fiel><center><h1>Anthurium Scherzerianum</h1></center>
+<h3>₹499
+<select name="Select" id="Select">
+<option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	 <option value="5">+5</option>
+  </select><a href="offers.html"><button class="bt3">🏷️offers</button></a></h3>
+<button class="button6">🛒Add to Cart</button>
+<a href="pay.html"><button class="button5">⚡Buy Now</button></a><br>
+<img src=""><a href=""><h4>☆☆☆☆☆ Reviews></h4></a><hr>
+<p>
+Description<br>
+Product Details:<br>
+Plant Name- Chamaedorea Elegans<br>
+Family- Araceae<br>
+Plant Placement- Indoor/Outdoor<br>
+Plant Height- Upto 10 Inches<br>
+Terracotta Tube Planter- 6 x 5 Inches<br>
+Product Description:
+Chamaedorea elegans, commonly called parlor palm or neanthe bella palm, is a small, compact, 
+usually single-trunked palm.The Parlor Palm is easily grown in rich, moist, well-drained soils in filtered sun/part shade to shade.</p>
+<hr>
+<p>Care Instructions<br>
+◦ Palm plants are tolerant of being under watered, but they will grow their best when watered on a regular basis.<br>
+◦ Ideally, palm plants prefer it when their soil is kept evenly moist, especially during the summer months (their active growing season). <br>
+◦ Allow the soil to dry out only slightly between waterings in the summer. <br>
+◦ During the winter, you can let the soil dry out a bit more between waterings. <br>
+◦ Do not allow plants to stand in water.<br>
+◦ Palms love bright filtered or indirect sunlight. Palms can suffer from too much or too little light.<br>
+◦ Keep them in the balcony or near a window with bright light. Use fertiliser sparingly in summers only.<br>
+</p>
+</div>
+<br>
+<div class="video"><iframe width="700" height="345" src="https://www.youtube.com/embed/LZhnCxG5c6s"autoplay=1&mute=1">
+</iframe><h5>Watch video for more info</h5>
+</div>
+<div class="main" id="section2">
+	<div class="wrapper">
+		<input id="btnBox" type="checkbox">
+		<ul>
+			<a href="indo3.html"><li style="background-image: url(Philodendron.jpg)"><div class="overlay">Philodendron Heartleaf</div></li></a>
+			<a href="indo6.html"><li style="background-image: url(daisy.jpg)"><div class="overlay">Barberton Daisy</div></li></a>
+			<a href="indo1.html"><li style="background-image: url(lady.jpg)"><div class="overlay">Lady Palm</div></li></a>
+			<a href="indo2.html"><li style="background-image: url(chrys.jpg)"><div class="overlay">Chrysanthemums</div></li></a>
+			<a href="indo4.html"><li style="background-image: url(fern.jpg)"><div class="overlay">Kimberly Queen Fern</div></li></a>
+			<a href="#section1"><li style="background-image: url(anthurium.jpg)"><div class="overlay">Anthurium Scherzerianum</div></li></a>
+		</ul>
+	</div></div><br>
+	 <a href="#section1"><img class="img" src="top.png" alt="Avatar" width="50px" height="50px"></a><br><br><br>
+	 <footer><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+       <div class="wra">
+         <a href="https://www.facebook.com/groups/293167321514107/about"><div class="button">
+            <div class="icon">
+               <i class="fab fa-facebook-f"></i>
+            </div>
+            <span>Facebook</span>
+         </div></a>
+         <a href="https://twitter.com/amazingplants?lang=en"><div class="button">
+            <div class="icon">
+               <i class="fab fa-twitter"></i>
+            </div>
+            <span>Twitter</span>
+         </div></a>
+         <a href="https://www.instagram.com/houseplantclub/?hl=en"><div class="button">
+            <div class="icon">
+               <i class="fab fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+         </div></a>
+         <a href="https://youtu.be/A-xScqCN0GA"><div class="button">
+            <div class="icon">
+               <i class="fab fa-youtube"></i>
+            </div>
+            <span>YouTube</span>
+         </div></a>
+      </div></footer>
+</body></html>

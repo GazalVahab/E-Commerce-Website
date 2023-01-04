@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title style="font-family:Ravie">Green Wish - Contact</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+background-color: #f2f2f2;
+margin:0px}
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  /*background-color: #f2f2f2;*/
+  padding: 20px;
+  width:500px;
+  float:right;
+  margin-right:60px;
+  margin-top:10px;
+}
+h2{
+margin-top:-60px;
+margin-left:100px;
+font-family:Ravie;
+}
+.d1{
+margin-top:5px;
+margin-left:650px;
+}
+.d2{
+margin-left:1385px;
+margin-top:-35px;}
+ul.a{
+list-style-type:none;
+background-color:white;
+padding:0px;
+width:100%;
+font-size:20px;
+background-color:none;
+font-family:Bell MT;
+position:fixed;
+margin-left:300px;
+margin-top:-50px;
+}
+li 
+{
+display:inline;
+float:left;
+}
+li a
+{color:#01624A ;
+display:block;
+padding:10px;
+text-decoration:none;
+}
+li a.active{
+background-color:#01624A ;
+color:white;
+}
+li a:hover:not(.active){
+background-color:#05D35E ;
+display:block;
+color:white;
+}
+.button1{
+background-color:white;
+color:#01624A  ;
+padding:10px;
+font-size:20px;
+border:none;
+cursor:pointer;
+font-family:Bell MT;
+}
+.dropdown{
+position:relative;
+display:inline-block;
+font-family:Bell MT
+padding:10px;
+}
+.dropdown-cont{
+display:none;
+position:absolute;
+background-color:green;
+width:200px;
+box-shadow:0px 8px 16px 0px #D5F7EF ;
+padding:10px;
+z-index:1;
+}
+.dropdown-cont a{
+color:#01624A;
+padding:10px;
+text-decoration:none;
+display:block;
+width:180px;
+}
+.dropdown:hover .button1{
+background-color: #05D35E ;
+display:block;
+color:white;
+}
+.dropdown:hover .dropdown-cont{
+display:block;
+background-color:white;
+color: #01624A ;
+}
+.dropdown-cont a:hover {
+background-color:#01624A ;
+color:white;
+display:block;
+}
+h2{
+margin-top:-60px;
+margin-left:100px;
+font-family:Ravie;
+text-decoration:none;
+}
+.log{
+float:right;
+margin-top:0px;
+margin-right:350px;
+}
+.header {
+  padding: 10px; 
+  background: white;
+  color:black;
+  width:100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
+}
+table{
+border-style:none;
+padding:15px;
+font-size:20px;
+margin-left:200px;
+margin-top:50px;
+text-align:left;
+background-color:white;
+opacity:80%;}
+.map{
+margin-left:50px;
+margin-top:50px;}
+footer{
+  display: grid;
+  height: auto;
+  width: auto;
+  padding:30px 50px;
+  place-items: center;
+  background: linear-gradient(315deg, #c0c0c0 0%, #a9a9a9 74%);
+}
+.wra .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+  decoration:none;
+}
+.wra .button:hover{
+  width: 200px;
+}
+.wra .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wra .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wra .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wra .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wra .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wra .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wra .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wra .button:hover .icon i{
+  color: #fff;
+}
+.wra .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wra .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wra .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wra .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wra .button:nth-child(4) span{
+  color: #333;
+}
+.wra .button:nth-child(5) span{
+  color: #ff0000;
+  text-decoration:none;
+}
+</style>
+</head><body>
+<div class="header" id="myHeader">
+<a href="Home.html"><img src="logo.png"></a><h2>Green Wish</h2>
+<body>
+<ul class="a">
+<li><a href="Home.html">Home</a></li>
+<li><a href="landing.html">About Us</a></li>
+<li><a class="active" href="contact.html">Contact Us</a></li>
+<div class="dropdown">
+<button class="button1">Plants</button>
+<div class="dropdown-cont">
+<a href="Airpuri.html">Air Purifying plants</a>
+<a href="Indoor.html">Indoor plants</a>
+</div></div>
+<div class="dropdown">
+<button class="button1">Gifting</button>
+<div class="dropdown-cont">
+<a href="zodihome.html">Gifting-Lucky Plants as per zodiac Signs</a>
+</div></div>
+<div class="dropdown">
+<a href="FAQ.html"><button class="button1">FAQs</button></a>
+</div>
+<div class="log"><a href="prjktlogin.html"><img src="login.png"></a><a href="pay.html"><img src="kart.png"></a></div>
+</ul>
+</div>
+<script>window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}</script>
+<img src="cont.png">
+<div class="container">
+  <form action="/action_page.php">
+  <center><h1>How can we help?</h1></center>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name.." required>
+    <label for="lname">Email</label>
+    <input type="email" id="email" name="mail" placeholder="Your email id.." required>
+	<label for="num">Contact Number</label>
+    <input type="text" id="num" name="num" placeholder="Your email id.." required>
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+    <center><input type="submit" value="Submit" style="font-size:20px"></center>
+  </form>
+</div>
+<div class="map">
+            <!-- Google Map Copied Code -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250646.96827152415!2d76.82714837490758!3d11.01167749112608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1650646354457!5m2!1sen!2sin" 
+			width="800" height="450" style="border:0;" 
+			allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+		<table>
+
+<tr><th>Address</tr></th>
+<tr><td>xyz Building
+Suite #123
+Coimbatore, Pin 1234</td></tr>
+<tr><th>Email</tr></th>
+<tr><td>greenwish@gmail.com</tr></td>
+<tr><th>Phone</tr></th>
+<tr><td>(123) 456-8030</tr></td></table>
+</div><br>
+	<footer><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+       <div class="wra">
+         <a href="https://www.facebook.com/groups/293167321514107/about"><div class="button">
+            <div class="icon">
+               <i class="fab fa-facebook-f"></i>
+            </div>
+            <span>Facebook</span>
+         </div></a>
+         <a href="https://twitter.com/amazingplants?lang=en"><div class="button">
+            <div class="icon">
+               <i class="fab fa-twitter"></i>
+            </div>
+            <span>Twitter</span>
+         </div></a>
+         <a href="https://www.instagram.com/houseplantclub/?hl=en"><div class="button">
+            <div class="icon">
+               <i class="fab fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+         </div></a>
+         <a href="https://youtu.be/A-xScqCN0GA"><div class="button">
+            <div class="icon">
+               <i class="fab fa-youtube"></i>
+            </div>
+            <span>YouTube</span>
+         </div></a>
+      </div></footer></body>
+</html>

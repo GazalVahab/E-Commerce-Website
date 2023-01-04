@@ -1,0 +1,515 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title style="font-family:Ravie">Green Wish - Zodiacs</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+<style>
+body{
+  background-image:url("");
+  height:auto;
+  width:auto;
+  margin:0;
+}
+.d1{
+margin-top:5px;
+margin-left:650px;
+}
+.d2{
+margin-left:1385px;
+margin-top:-35px;}
+ul.a{
+list-style-type:none;
+background-color:white;
+padding:0px;
+width:100%;
+font-size:20px;
+text-decoration:none;
+font-family:Bell MT;
+position:fixed;
+margin-left:300px;
+margin-top:-80px;
+}
+li 
+{
+display:inline;
+float:left;
+}
+li a
+{color:#01624A ;
+display:block;
+padding:10px;
+text-decoration:none;
+}
+li a.active{
+background-color:#01624A ;
+color:white;
+}
+li a:hover:not(.active){
+background-color:#05D35E ;
+display:block;
+color:white;
+}
+.button1{
+background-color:white;
+color:#01624A  ;
+padding:10px;
+font-size:20px;
+border:none;
+cursor:pointer;
+text-decoration:none;
+font-family:Bell MT;
+}
+.dropdown{
+position:relative;
+display:inline-block;
+font-family:Bell MT
+padding:10px;
+text-decoration:none;
+}
+.dropdown-cont{
+display:none;
+position:absolute;
+background-color:green;
+width:200px;
+box-shadow:0px 8px 16px 0px #D5F7EF ;
+padding:10px;
+z-index:1;
+}
+.dropdown-cont a{
+color:#01624A;
+padding:10px;
+text-decoration:none;
+display:block;
+width:180px;
+}
+.dropdown:hover .button1{
+background-color: #05D35E ;
+display:block;
+color:white;
+text-decoration:none;
+}
+.dropdown:hover .dropdown-cont{
+display:block;
+background-color:white;
+color: #01624A ;
+}
+.dropdown-cont a:hover {
+background-color:#01624A ;
+color:white;
+display:block;
+}
+h2{
+margin-top:-60px;
+margin-left:100px;
+font-family:Ravie;
+text-decoration:none;
+}
+input[type=text] {
+  width: 150px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('search.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 90%;
+}
+form{
+float:right;
+margin-right:500px;}
+.log{
+float:right;
+margin-top:5px;
+margin-right:-300px;}
+marquee{
+color:white;
+background-color:#01624A;
+padding:5px;
+width:100%;
+margin-top:10px;
+}
+.header {
+  padding:0px; 
+  background:white;
+  color:black;
+  width:100%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
+}
+table{
+border:solid black 1px;
+background-color: #f2f2f2;
+opacity:80%;
+margin:20px;
+height:auto;
+width:98%;}
+td{padding:20px;}
+.button6{
+background-color:#01624A;
+color:white;
+text-decoration:none;
+width:150px;
+height:60px;
+display:inline-block;
+font-size:20px;
+text-align:center;
+border:none;
+float:left;
+cursor:pointer;
+border:solid white;
+font-family:Bell MT;
+}
+.button6:hover {
+  background-color: #05D35E ;
+  color: white;}
+  .button5{
+background-color:#01624A;
+color:white;
+text-decoration:none;
+width:150px;
+height:60px;
+display:inline-block;
+font-size:20px;
+text-align:center;
+border:none;
+float:left;
+cursor:pointer;
+border:solid white;
+font-family:Bell MT;
+}
+.button5:hover {
+  background-color: #05D35E ;
+  color: white;}
+#Select{
+margin-left:20px;}
+.bt3{
+margin-left:20px;
+font-size:20px;
+text-decoration:none;}
+.pic{
+float:right;
+}
+html {
+  scroll-behavior:smooth;
+}
+footer{
+  display: grid;
+  height: auto;
+  width: auto;
+  padding:30px 50px;
+  place-items: center;
+  background: linear-gradient(315deg, #0fa882 0%, #01624A 74%);
+}
+.wra .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+  decoration:none;
+}
+.wra .button:hover{
+  width: 200px;
+}
+.wra .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wra .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wra .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wra .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wra .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wra .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wra .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wra .button:hover .icon i{
+  color: #fff;
+}
+.wra .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wra .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wra .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wra .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wra .button:nth-child(4) span{
+  color: #333;
+}
+.wra .button:nth-child(5) span{
+  color: #ff0000;
+  text-decoration:none;
+}
+</style><div class="main" id="section1"><div class="header" id="myHeader" >
+<a href="Home.html"><img src="logo.png"></a><h2>Green Wish</h2>
+<body>
+<marquee><b>USE CODE WISH10 TO GET 10% OFF | SHOP NOW</b></marquee>
+<ul class="a">
+<li><a href="Home.html">Home</a></li>
+<li><a href="landing.html">About Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<div class="dropdown">
+<button class="button1">Plants</button>
+<div class="dropdown-cont">
+<a href="Airpuri.html">Air Purifying plants</a>
+<a href="Indoor.html">Indoor plants</a>
+</div></div>
+<div class="dropdown">
+<button class="button1">Gifting</button>
+<div class="dropdown-cont">
+<a href="zodihome.html">Gifting-Lucky Plants as per zodiac Signs</a>
+</div></div>
+<div class="dropdown">
+<a href="FAQ.html"><button class="button1">FAQs</button></a>
+</div>
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+<div class="log"><a href="prjktlogin.html"><img src="login.png"></a><a href="pay.html"><img src="kart.png"></a></div>
+</ul></div>
+<script>window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}</script>
+<img src="zodiac.jpg"></div>
+<table>
+<tr>
+<td><img src="ari.jpg" alt="online interior design" width="400px" height="450px"></td>
+<td>
+<h1>ARIES(March 21 – April 19)</h1>
+<h1>₹299<select name="Select" id="Select">
+<option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	 <option value="5">+5</option></h1>
+  </select><a href="offers.html"><button class="bt3">🏷️offers</button></a></h3>
+<p>With an Aries, what you see is what you get. They’re honest and straightforward, and the same can be said for an aloe plant. It only needs a little water and a lot of sun – just like this fire sign.Between work, taking care of family, appointments, activities and social obligations, it's hard to get much else done. Never mind finding the time to interview and meet up with a selection of interior designers or decorators to help re-fresh or create a new space. Our unique approach to interior decorating allows you to communicate with us easily and conveniently so that you can stay focused on what’s truly important.</p>
+<h3>PLANT:</h3>
+Aloe
+<h3>HOW TO CARE FOR IT:</h3>
+Bright or indirect sunlight<br>
+Water infrequently, but deeply
+<h3>PET FRIENDLY?</h3> No<br>
+<button class="button6">🛒Add to Cart</button><a href="pay.html"><button class="button5">⚡Buy Now</button></a></td></tr>
+</table>
+<table>
+<tr>
+<td><img src="tau.jpg" alt="online interior design" width="400px" height="450px"></td>
+<td>
+<h1>TAURUS(April 20 – May 20)</h1>
+<h1>₹199<select name="Select" id="Select">
+<option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	 <option value="5">+5</option></h1>
+  </select><a href="offers.html"><button class="bt3">🏷️offers</button></a></h3>
+<p>As someone who is extremely well-grounded and practical, a jade plant is a perfect plant companion. And it’s soft and squishy leaves will certainly please a tactile Taurus.</p>
+<h3>PLANT:</h3>
+Jade
+<h3>HOW TO CARE FOR IT:</h3>
+Needs 4 hours of direct sunlight<br>
+Water more in summer and spring growing season<br>
+Plant in a shallow pot as it tends to grow top-heavy
+<h3>PET FRIENDLY?</h3> No<br>
+<button class="button6">🛒Add to Cart</button><a href="pay.html"><button class="button5">⚡Buy Now</button></a></td></tr>
+</table>
+<table>
+<tr>
+<td><img src="gemini.jpg" alt="online interior design" width="400px" height="450px"></td>
+<td>
+<h1>GEMINI(May 21 – June 20)</h1>
+<h1>₹653<select name="Select" id="Select">
+<option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	 <option value="5">+5</option></h1>
+  </select><a href="offers.html"><button class="bt3">🏷️offers</button></a></h3>
+<p>You show your expressive side – and so does this funky air plant.  And as an air sign, a plant that requires no soil (and is light as a feather) certainly suits you.</p>
+<h3>PLANT:</h3>
+Air Plant
+<h3>HOW TO CARE FOR IT:</h3>
+Bright or indirect sunlight<br>
+Soak in room temperature water once every 1-2 weeks<br>
+Mist the entire surface once a week
+<h3>PET FRIENDLY?</h3>Yes<br>
+<button class="button6">🛒Add to Cart</button><a href="pay.html"><button class="button5">⚡Buy Now</button></a></td></tr>
+</table>
+<table>
+<tr>
+<td><img src="can.jpg" alt="online interior design" width="400px" height="450px"></td>
+<td>
+<h1>CANCER(June 21 – July 22)</h1>
+<h1>₹440<select name="Select" id="Select">
+<option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	 <option value="5">+5</option></h1>
+  </select><a href="offers.html"><a href="offers.html"><button class="bt3">🏷️offers</button></a></h3>
+<p>A money tree’s twisted trunk and deep roots will connect to a Cancer’s deep connection to their close-knit families.A Cancer’s nurturing nature will bring much joy to a money tree that will, in turn, bring prosperity and good fortune throughout the home. Cancer plant parents will also find other commonalities with their plant. </p>
+<h3>PLANT:</h3>
+Money Plant
+<h3>HOW TO CARE FOR IT:</h3>
+Medium, indirect light<br>
+Infrequent, but deep watering<br>
+Prefers to stay in one spot
+<h3>PET FRIENDLY?</h3>Yes<br>
+<button class="button6">🛒Add to Cart</button><a href="pay.html"><button class="button5">⚡Buy Now</button></a></td></tr>
+</table>
+<table>
+<tr>
+<td><img src="le.jpg" alt="online interior design" width="400px" height="450px"></td>
+<td>
+<h1>LEO(July 23 – August 22)</h1>
+<h1>₹270<select name="Select" id="Select">
+<option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	 <option value="5">+5</option></h1>
+  </select><a href="offers.html"><button class="bt3">🏷️offers</button></a></h3>
+<p>You need a pant that turns as many heads as you do, Leo. And the vibrant leaves on the emerald ripple red plant do just that.These tropical plants thrive in warm climates and complement a Leo’s fiery personality! A bromeliad’s flashy colors and exotic roots are also directly reflective of a Leo’s showy character and desire to embark on fun adventures.</p>
+<h3>PLANT:</h3>
+Emerald Ripple Red Plant
+<h3>HOW TO CARE FOR IT:</h3>
+Low to bright indirect light<br>
+Water when the top inch of soil is dry
+<h3>PET FRIENDLY?</h3>No<br>
+<button class="button6">🛒Add to Cart</button><a href="pay.html"><button class="button5">⚡Buy Now</button></a></td></tr>
+</table>
+<table>
+<tr>
+<td><img src="ari.jpg" alt="online interior design" width="400px" height="450px"></td>
+<td>
+<h1>VIRGO
+(August 23 – September 22)</h1>
+<h1>₹301<select name="Select" id="Select">
+<option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	 <option value="5">+5</option></h1>
+  </select><a href="offers.html"><a href="offers.html"><button class="bt3">🏷️offers</button></a></h3>
+<p>Practicality and sharp attention to detail are driving factors for a Virgo’s personality. Virgos are the type of people you can depend on for support in all forms and to deliver the highest quality work. Their conservativeness and tenacious work ethic all point to the rubber tree as this sign’s plant partner.</p>
+<h3>PLANT:</h3>
+Prayer Plant
+<h3>HOW TO CARE FOR IT:</h3>
+Bright or indirect sunlight<br>
+Water frequently<br>
+Needs good drainage
+<h3>PET FRIENDLY?</h3>Yes<br>
+<button class="button6">🛒Add to Cart</button><a href="pay.html"><button class="button5">⚡Buy Now</button></a></td></tr>
+</table>
+
+<table><tr>
+<td><img src="libra.jpg" alt="online interior design" width="400px" height="450px"></td>
+<td>
+<div class="section2"><h1>LIBRA(September 23 – October 22)</h1>
+<h1>₹195<select name="Select" id="Select">
+<option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	 <option value="5">+5</option></h1>
+  </select><a href="offers.html"><button class="bt3">🏷️offers</button></a></h3>
+<p>Libras are diplomatic people that live their lives with harmony and balance. They’re socialites who enjoy more sophisticated activities like visiting a museum or enjoying the theater. Libra plant parents are fascinated with art and beautiful things, so the monstera’s long history in art and recent rise in popularity makes it the only choice for this sign.</p>
+<h3>PLANT:</h3>
+Peperomia
+<h3>HOW TO CARE FOR IT:</h3>
+Bright or indirect sunlight<br>
+Water every 1-2 weeks
+<h3>PET FRIENDLY?</h3>Yes<br>
+<button class="button6">🛒Add to Cart</button><a href="pay.html"><button class="button5">⚡Buy Now</button></a></td></tr>
+</table> <a href="#section1"><img class="pic" src="top.png" alt="Avatar" width="50px" height="50px"></a></div><br><br><br>
+	<footer><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+       <div class="wra">
+         <a href="https://www.facebook.com/groups/293167321514107/about"><div class="button">
+            <div class="icon">
+               <i class="fab fa-facebook-f"></i>
+            </div>
+            <span>Facebook</span>
+         </div></a>
+         <a href="https://twitter.com/amazingplants?lang=en"><div class="button">
+            <div class="icon">
+               <i class="fab fa-twitter"></i>
+            </div>
+            <span>Twitter</span>
+         </div></a>
+         <a href="https://www.instagram.com/houseplantclub/?hl=en"><div class="button">
+            <div class="icon">
+               <i class="fab fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+         </div></a>
+         <a href="https://youtu.be/A-xScqCN0GA"><div class="button">
+            <div class="icon">
+               <i class="fab fa-youtube"></i>
+            </div>
+            <span>YouTube</span>
+         </div></a>
+      </div></footer>
+</body></html>
